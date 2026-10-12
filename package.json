@@ -1,0 +1,9 @@
+{
+  "name": "bhailang",
+  "version": "2.0.0",
+  "description": "A GenZ Hinglish interpreted programming language, built from scratch",
+  "main": "index.js",
+  "bin": { "bhailang": "index.js" },
+  "scripts": { "start": "node index.js", "test": "node test.js" },
+  "license": "MIT"
+}

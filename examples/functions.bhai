@@ -1,0 +1,35 @@
+// Functions, recursion and closures
+
+kaam banao fact(n) {
+  agar n <= 1 { wapas do 1; }
+  wapas do n * fact(n - 1);
+}
+
+kaam banao fib(n) {
+  agar n < 2 { wapas do n; }
+  wapas do fib(n - 1) + fib(n - 2);
+}
+
+bhai bol "5! =", fact(5);
+bhai bol "10! =", fact(10);
+
+bhai ye hai result = [];
+har i mein range(10) {
+  push(result, fib(i));
+}
+bhai bol "Fibonacci:", result;
+
+// A closure remembers its own variable
+kaam banao make_counter() {
+  bhai ye hai count = 0;
+  kaam banao next() {
+    count += 1;
+    wapas do count;
+  }
+  wapas do next;
+}
+
+bhai ye hai counter = make_counter();
+counter();
+counter();
+bhai bol "Counter ab:", counter();

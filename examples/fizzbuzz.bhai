@@ -1,0 +1,12 @@
+// FizzBuzz: loops + conditions
+har i mein range(1, 21) {
+  agar i % 15 == 0 {
+    bhai bol "FizzBuzz";
+  } warna agar i % 3 == 0 {
+    bhai bol "Fizz";
+  } warna agar i % 5 == 0 {
+    bhai bol "Buzz";
+  } warna {
+    bhai bol i;
+  }
+}

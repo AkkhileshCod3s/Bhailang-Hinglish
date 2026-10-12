@@ -1,0 +1,7 @@
+// bhailang demo
+bhai ye hai score = 10;
+bhai ye hai bonus = 5;
+bhai ye hai total = score + bonus * 2;
+bhai bol total;
+total = (score + bonus) * 2;
+bhai bol total;

@@ -1,0 +1,20 @@
+// Simple calculator: reads input from the keyboard with `bhai sun`
+bhai ye hai a = float(bhai sun("Pehla number: "));
+bhai ye hai op = bhai sun("Operation (+ - * /): ");
+bhai ye hai b = float(bhai sun("Doosra number: "));
+
+agar op == "+" {
+  bhai bol "Jawab:", a + b;
+} warna agar op == "-" {
+  bhai bol "Jawab:", a - b;
+} warna agar op == "*" {
+  bhai bol "Jawab:", a * b;
+} warna agar op == "/" {
+  agar b == 0 {
+    bhai bol "Zero se divide nahi hota bhai!";
+  } warna {
+    bhai bol "Jawab:", a / b;
+  }
+} warna {
+  bhai bol "Ye operation samajh nahi aaya:", op;
+}

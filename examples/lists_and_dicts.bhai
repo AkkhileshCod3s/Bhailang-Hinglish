@@ -1,0 +1,33 @@
+// Lists and dicts
+
+bhai ye hai marks = [72, 85, 90, 64, 78];
+
+bhai bol "Marks:", marks;
+bhai bol "Total:", sum(marks);
+bhai bol "Average:", sum(marks) / len(marks);
+bhai bol "Highest:", max(marks), "| Lowest:", min(marks);
+bhai bol "Sorted:", sorted(marks);
+
+// Count how many students passed (40+)
+bhai ye hai passed = 0;
+har m mein marks {
+  agar m >= 40 { passed += 1; }
+}
+bhai bol passed, "out of", len(marks), "passed";
+
+// A dict as a record
+bhai ye hai student = {"naam": "Rahul", "class": 10, "subjects": ["Maths", "Science"]};
+student["city"] = "Rajpura";
+bhai bol student;
+bhai bol student["naam"], "ki city", student["city"];
+
+// Count words with a dict
+bhai ye hai counts = {};
+har word mein split("bhai bol bhai ye hai bhai") {
+  agar has(counts, word) {
+    counts[word] += 1;
+  } warna {
+    counts[word] = 1;
+  }
+}
+bhai bol counts;

@@ -1,0 +1,18 @@
+// Number guessing game: while loop + input + random
+bhai ye hai secret = randint(1, 20);
+bhai ye hai tries = 0;
+bhai ye hai guess = 0;
+
+bhai bol "Maine 1 se 20 ke beech ek number socha hai. Pakad ke dikha!";
+
+jabtak guess != secret {
+  guess = int(bhai sun("Teri guess: "));
+  tries += 1;
+  agar guess < secret {
+    bhai bol "Thoda bada bol.";
+  } warna agar guess > secret {
+    bhai bol "Thoda chhota bol.";
+  }
+}
+
+bhai bol "Sahi pakde! Number tha", secret, "aur tune", tries, "baar mein pakda.";
