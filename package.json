@@ -1,9 +1,19 @@
 {
-  "name": "bhailang",
+  "name": "bhailang-hinglish",
   "version": "2.0.0",
-  "description": "A GenZ Hinglish interpreted programming language, built from scratch",
+  "description": "Ek GenZ Hinglish programming language, plain Node.js mein",
   "main": "index.js",
-  "bin": { "bhailang": "index.js" },
-  "scripts": { "start": "node index.js", "test": "node test.js" },
+  "bin": {
+    "bhailang-hinglish": "./index.js",
+    "bhai": "./index.js"
+  },
+  "files": ["index.js", "src/", "examples/", "README.md", "LICENSE"],
+  "engines": { "node": ">=14" },
+  "scripts": { "test": "node test.js" },
+  "keywords": ["bhailang", "hinglish", "programming-language", "interpreter"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AkkhileshCod3s/Bhailang-Hinglish.git"
+  },
   "license": "MIT"
 }
